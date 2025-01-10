@@ -1,0 +1,10 @@
+<odoo>
+    <menuitem id="menu_principal" name="Menú Principal" sequence="1"/>
+    <menuitem id="sub_menu" name="Submenú" parent="menu_principal" sequence="2"/>
+    <record id="action_modelo" model="ir.actions.act_window">
+        <field name="name">Ejecutar Modelo</field>
+        <field name="res_model">agencia.model</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="menu_ejecutar_modelo" name="Ejecutar Modelo" parent="sub_menu" action="action_modelo"/>
+</odoo>
